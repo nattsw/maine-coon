@@ -12,7 +12,7 @@ describe('App', () => {
   const mockStore = configureStore([thunk]);
 
   const renderComponent = (pageProp) => render(
-    <Provider store={mockStore({ app: { page: pageProp } })}>
+    <Provider store={mockStore({ app: { page: pageProp }, settings: {} })}>
       <App />
     </Provider>,
   );
