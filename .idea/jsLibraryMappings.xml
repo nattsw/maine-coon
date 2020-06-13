@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/frontend" libraries="{hipe/frontend/node_modules}" />
+    <file url="PROJECT" libraries="{@types/testing-library__dom, @types/testing-library__jest-dom, @types/testing-library__react, hipe/frontend/node_modules}" />
+  </component>
+</project>
