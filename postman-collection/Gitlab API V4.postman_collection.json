@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "36f1ecae-95b6-4116-abd6-2c1a5ef56307",
+		"name": "Gitlab API V4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gitlab.com/api/v4/projects?visibility=private&private_token={{token}}&membership=true",
+					"protocol": "https",
+					"host": [
+						"gitlab",
+						"com"
+					],
+					"path": [
+						"api",
+						"v4",
+						"projects"
+					],
+					"query": [
+						{
+							"key": "visibility",
+							"value": "private",
+							"description": "public, internal, private"
+						},
+						{
+							"key": "private_token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "membership",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET project pipelines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gitlab.com/api/v4/projects/{{projectId}}/pipelines?private_token={{token}}&per_page=100&page=1",
+					"protocol": "https",
+					"host": [
+						"gitlab",
+						"com"
+					],
+					"path": [
+						"api",
+						"v4",
+						"projects",
+						"{{projectId}}",
+						"pipelines"
+					],
+					"query": [
+						{
+							"key": "private_token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "scope",
+							"value": "finished",
+							"description": "The scope of pipelines, one of: running, pending, finished, branches, tags",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "success",
+							"description": "The status of pipelines, one of: running, pending, success, failed, canceled, skipped, created, manual",
+							"disabled": true
+						},
+						{
+							"key": "per_page",
+							"value": "100"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET project pipeline details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gitlab.com/api/v4/projects/{{projectId}}/pipelines/148578727?private_token={{token}}",
+					"protocol": "https",
+					"host": [
+						"gitlab",
+						"com"
+					],
+					"path": [
+						"api",
+						"v4",
+						"projects",
+						"{{projectId}}",
+						"pipelines",
+						"148578727"
+					],
+					"query": [
+						{
+							"key": "private_token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "scope",
+							"value": "finished",
+							"description": "The scope of pipelines, one of: running, pending, finished, branches, tags",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "success",
+							"description": "The status of pipelines, one of: running, pending, success, failed, canceled, skipped, created, manual",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET project commit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gitlab.com/api/v4/projects/{{projectId}}/repository/commits/82e98dc053a948f226ecd35d8f13d42591e643cd?private_token={{token}}",
+					"protocol": "https",
+					"host": [
+						"gitlab",
+						"com"
+					],
+					"path": [
+						"api",
+						"v4",
+						"projects",
+						"{{projectId}}",
+						"repository",
+						"commits",
+						"82e98dc053a948f226ecd35d8f13d42591e643cd"
+					],
+					"query": [
+						{
+							"key": "private_token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "scope",
+							"value": "finished",
+							"description": "The scope of pipelines, one of: running, pending, finished, branches, tags",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "success",
+							"description": "The status of pipelines, one of: running, pending, success, failed, canceled, skipped, created, manual",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
