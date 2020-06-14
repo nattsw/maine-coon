@@ -1,17 +1,18 @@
 Task list:
 
--[ ] Add Redux
--[ ] Show/Hide Table
--[ ] Make use of [Fullheight Hero](https://bulma.io/documentation/layout/hero/#fullheight-hero-in-3-parts) for landing page
+- [x] Add Redux
+- [x] Commit Message (make another api call)
+- [x] Heroku `git branch -D frontend & git subtree split --prefix frontend -b frontend & git push -f heroku frontend:master`
+- [x] Add pipeline
+- [x] UI: Show/Hide Table
 
+- [ ] UX: Job-specific graphs
+- [ ] UI: Tooltip for who did the build (already available)
+- [ ] UI: Make use of [Fullheight Hero](https://bulma.io/documentation/layout/hero/#fullheight-hero-in-3-parts) for landing page
 
-
-
-
-
-
-
-
+- [ ] failed builds
+- [ ] group by day
+- [ ] UI: Show axis
 
 
 
